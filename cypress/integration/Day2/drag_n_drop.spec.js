@@ -17,10 +17,10 @@ const dataTransfer = new DataTransfer;
 function dragNdrop(){
 
     cy.get('#column-a').should('be.visible')
-    .trigger('dragstart');
+    .trigger('dragstart'); //a is target
 
     cy.get('#column-b').should('be.visible')
-    .trigger('drop',{dataTransfer});
+    .trigger('drop',{dataTransfer}); //b is drag and dropped
 
 
     cy.get('#column-b').should('be.visible')

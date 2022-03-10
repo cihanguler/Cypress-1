@@ -19,6 +19,7 @@ describe('handling each function',()=>{
             cy.log('$el : ', $el.text())
             const text = $el.text()
             expect(text).to.contain(data.quickLaunch[index])
+            //text.should('eq', data.quickLaunch[index])
             
             if(text == "My Timesheet"){
                 //Jquery element
