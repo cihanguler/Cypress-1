@@ -34,7 +34,6 @@ cy.get(loc).next().click()
 cy.go('back')
 cy.get(loc).nextAll.click({multiple : true})
 
-
 cy.get(loc).prev().click()
 cy.get(loc).prevAll().click()
 
