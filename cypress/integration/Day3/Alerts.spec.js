@@ -48,7 +48,6 @@ describe('Alerts',()=>{
 
     it('Handling JS Promp - Input text in promt ,Click OK and Validate Input Text',()=>{
        
-
         cy.window().then(($win)=>{
             cy.stub($win,'prompt').returns('This is a test text')
             cy.get('[onclick="jsPrompt()"]').click()
