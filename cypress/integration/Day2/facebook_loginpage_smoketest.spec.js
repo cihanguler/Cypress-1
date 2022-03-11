@@ -1,22 +1,21 @@
 
 
-describe('Login Page Smoke Test',()=>{
+describe('Facebook Login Page Smoke Test',()=>{
 
-    it('Positive Testing',()=>{
-        cy.login_Positive_Scenarios()
+
+    it('Positive Scenarios Testing',()=>{
+        cy.login()
     })
 
-    it('Wrong username right password Negative Testing',()=>{
-
-        cy.Negative_Password_Testing()
+    it('Wrong username Negative Testing',()=>{
+        cy.wrong_username_Testing()
     })
 
-    it('Negative Testing Wrong Username',()=>{
-        cy.Negative_Username_Testing()
+    it('Wrong password Negative Testing',()=>{
+        cy.wrong_password_Testing()
     })
 
-    it('Negative Wrong Username and Password Testing',()=>{
-        cy.Negative_Username_Password_Testing()
+    it('Wrong password and username Negative Testing',()=>{
+        cy.wrong_username_password_Testing()
     })
 })
-

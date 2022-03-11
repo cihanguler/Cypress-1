@@ -10,7 +10,9 @@ if(Url.include('staging')){
     cy.fixture('uat.json').then((data)=>{
 
     })
-    
 }else if(Url.include('prod')){
-    cy.fixture('prod.json')
+    cy.fixture('prod.json').then((data)=>{
+
+    })
 }
+
