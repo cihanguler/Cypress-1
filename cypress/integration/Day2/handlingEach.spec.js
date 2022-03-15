@@ -18,7 +18,6 @@ describe('Handling each function',()=>{
             const text = $el.text()
 
             expect(text).to.contain(information.quickLaunch[index])
-
         })
     })
 })

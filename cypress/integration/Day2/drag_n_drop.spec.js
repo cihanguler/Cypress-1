@@ -14,6 +14,9 @@ describe('Drag and drop feature',()=>{
 
 const datatransfer = new DataTransfer;
 
+    cy.get('#column-b').should('be.visible').trigger('drop',{datatransfer})
+    cy.wait(500)
+    cy.get('#column-b').should('be.visible').trigger('dragend')
 
 function drag_and_drop(){
 
@@ -26,6 +29,7 @@ function drag_and_drop(){
     cy.get('#column-b').should('be.visible')
     .trigger('dragend'); //a is dropped into b
 
+//break until 8:12
 
 }
 
@@ -39,4 +43,4 @@ function drag_and_drop2(){
     cy.get('#column-a').should('be.visible')
     .trigger('dragend')
 }
-
+})
