@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run -b chrome --headless --spec 'cypress/integration/1-getting-started/todo.spec.js'",
-    "smokeTesting":"cypress run --record --key 5cf4f7d9-82fb-4131-ac9f-475ba759410d --spec 'cypress/integration/Day2/File_Uploads.spec.js'"
+    "smokeTesting": "cypress run --record --key 17a5aa24-2341-402e-ba27-3b34fc5335e8 --spec 'cypress/integration/Day2/File_Uploads.spec.js'"
   },
   "author": "Altay",
   "license": "ISC",
@@ -13,7 +13,9 @@
     "cypress": "^9.5.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
-    "cypress-wait-until": "^1.7.2"
+    "cypress-wait-until": "^1.7.2",
+    "mochawesome": "^7.1.2",
+    "mochawesome-merge": "^4.2.1"
   },
   "dependencies": {
     "cypress-downloadfile": "^1.2.1"

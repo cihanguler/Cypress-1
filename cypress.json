@@ -11,5 +11,16 @@
     "username": "",
     "password": ""
   },
-  "projectId": "r3qu74"
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "charts": true
+       },
+
+  "video": true,
+  "projectId": "9fzcbo"
 }
